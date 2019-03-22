@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"  />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header class="main-header">
+        <div class="main-nav">
+          <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="about-therapist.html">About The Terapist</a></li>
+            <li><a href="types-of-massage.html">Types of Massage</a></li>
+            <li><a href="appointment.html">Schedule Appointment</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!--/.main-nav-->
+        <div class="page-name">
+          <h3 class="name">Contact Us </h3>
+        </div>
+        <!--/.page-name-->
+      </header>
+
+      <div class="container-gen">
+        <form
+          action="contact_us.html"
+          method="post"
+          name="contact_form"
+          id="form_id"
+          class="form_class"
+        >
+          <legend>
+            If you have any questions, please don't hesitate to contact me.
+          </legend>
+
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Your name.."
+          />
+
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            id="email"
+            name="user_email"
+            placeholder="Your email.."
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="text"
+            id="phone"
+            name="user_phone"
+            placeholder="Your phone.."
+          />
+
+          <label for="msg">Message:</label>
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Your message.."
+          ></textarea>
+
+          <label for="msg">Preferred Contact Method:</label><br />
+          <input type="radio" name="phone" value="phone" />
+          <label for="phone" class="opt">Phone</label><br />
+          <input type="radio" name="email" value="email" />
+          <label for="email" class="opt">Email</label>
+
+          <div class="button">
+            <button type="submit" id="submit_form" onclick="displayInfo()">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <!--/.container-gen-->
+    </div>
+    <!--/.wrap-->
+
+    <footer class="main-footer">
+      <p>
+        Massage by Stephanie | Stephanie Franz, LMT<br />
+        <a href="https://www.yogaonbaxter.com">YOGA ON BAXTER</a><br />
+        1611 Eastern Pkwy., @Baxter Ave. | Louisville, Kentucky 40204<br />
+        Phone: (502) 290-9250<br />
+        Office Hours - Call For Appointment Times<br />
+      </p>
+    </footer>
+    <!--Form JS  -->
+    <script src="js/form.js"></script>
+  </body>
+</html>
